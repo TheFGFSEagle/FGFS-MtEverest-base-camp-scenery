@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+	<path>MEBC-runway-marker.ac</path>
+	<animation>
+		<type>rotate</type>
+		<property>/environment/wind-from-heading-deg</property>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>1.0</z>
+		</axis>
+		<center>
+			<x-m>0.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.0</z-m>
+		</center>
+	</animation>
+	<animation>
+		<type>material</type> 
+		<object-name>top-lamp</object-name>
+		<condition>		
+			<greater-than>		
+				<property>/sim/time/sun-angle-rad</property>
+				<value>1.57</value>
+			</greater-than>
+		</condition>
+		<emission>	
+			<red>1</red>	
+			<green>1</green>	
+			<blue>1</blue>
+		</emission>
+	</animation>
+</PropertyList>

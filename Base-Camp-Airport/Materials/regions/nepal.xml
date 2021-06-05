@@ -1,0 +1,43 @@
+<?xml	version="1.0"?>
+<PropertyList>
+	<name>Alpehuez</name>
+
+	<area>
+		<lon1>86.8567</lon1>
+		<lon2>6.15</lon2>
+		<lat1>28.00</lat1>
+		<lat2>45.10</lat2>
+	</area>
+	<condition>
+		<equals>
+			<property>/sim/startup/season</property>
+			<value>winter</value>
+		</equals>
+	</condition>
+
+	<material>
+		<name>dirt_rwy</name>
+		<effect>Effects/terrain-overlay</effect>
+		<texture-set>
+			<texture>Textures/Terrain.winter/airport.png</texture>
+		</texture-set>
+		<parameters>
+			<hires_overlay_bias>-0.1</hires_overlay_bias>
+			<transition_model>0.9</transition_model>
+			<dot_density>0.2</dot_density>
+			<max_overlay_height>2.0</max_overlay_height>
+			<overlay_hardness>0.0</overlay_hardness>
+			<overlay_density>1.0</overlay_density>
+			<overlay_autumn_flag>1</overlay_autumn_flag>
+			<overlay_brightness_top>1.4</overlay_brightness_top>
+			<overlay_brightness_bottom>0.6</overlay_brightness_bottom>
+		</parameters>
+		<xsize>1000</xsize>
+		<ysize>1000</ysize>
+		<light-coverage>10000000.0</light-coverage>
+		<solid>1</solid>
+		<friction-factor>0.5</friction-factor>
+		<rolling-friction>0.01</rolling-friction>
+		<bumpiness>0.01</bumpiness>
+		</material>
+</PropertyList>
