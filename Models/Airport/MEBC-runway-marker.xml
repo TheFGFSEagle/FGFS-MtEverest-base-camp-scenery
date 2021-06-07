@@ -16,8 +16,8 @@
 			<z-m>0.0</z-m>
 		</center>
 	</animation>
-	<animation>
-		<type>material</type> 
+	<!--animation>
+		<type>material</type>	
 		<object-name>top-lamp</object-name>
 		<condition>		
 			<greater-than>		
@@ -30,5 +30,39 @@
 			<green>1</green>	
 			<blue>1</blue>
 		</emission>
+	</animation-->
+	<!--animation>
+		<type>dist-scale</type>
+		<object-name>top-lamp</object-name>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>1</dep>
+			</entry>
+			<entry>
+				<ind>130000</ind>
+				<dep>800</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>3.087</z-m>
+		</center>
+	</animation-->
+	<animation>
+		<object-name>top-lamp</object-name>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>10000</max-m>
 	</animation>
+	<model>
+		<name>top-lamp</name>
+		<path>Effects/top-lamp.xml</path>
+		<offsets>
+			<x-m>0.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m> 3.287</z-m>
+		</offsets>
+	</model>
 </PropertyList>
