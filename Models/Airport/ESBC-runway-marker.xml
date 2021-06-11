@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+	<path>ESBC-runway-marker.ac</path>
+	<animation>
+		<type>rotate</type>
+		<property>/environment/wind-from-heading-deg</property>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>1.0</z>
+		</axis>
+		<center>
+			<x-m>0.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.0</z-m>
+		</center>
+	</animation>
+	<animation>
+		<object-name>top-lamp</object-name>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>10000</max-m>
+	</animation>
+	<model>
+		<name>top-lamp</name>
+		<path>Effects/top-lamp.xml</path>
+		<offsets>
+			<x-m>0.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>3.15</z-m>
+		</offsets>
+	</model>
+</PropertyList>
